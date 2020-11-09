@@ -13199,14 +13199,22 @@ div#notebook {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Jupyter est un logiciel qui permet via ses notebook de mêler texte est programmation via des cellules de code:</p>
+<p>Jupyter est une application web (c'est-à-dire qu'elle s'execute dans un navigateur), mais on peut la lancer en local (elle lance alors un navigateur automatiquement).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Dans Jupyter on manipule en général ce que l'on appelle des Notebooks. Un notebook (dont vous voyez un exemplaire non interactif en ce moment) est une feuille permettant de mêler texte et programmation via des cellules de code:</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[0]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span><span class="p">(</span><span class="nb">int</span> <span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span><span class="n">i</span><span class="o">&lt;</span><span class="mi">16</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">){</span>
@@ -13246,10 +13254,11 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span><span class="n">matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">])</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">));</span><span class="n">plt</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">matrix</span><span class="p">);</span><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
@@ -13264,7 +13273,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[1]:</div>
 
 
 
@@ -13285,7 +13294,7 @@ height=197
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Il permet enfin d'écrire des formules mathématiques: $\displaystyle\int_{-\infty}^{+\infty}e^{-x^2}=\sqrt{\pi}$</p>
+<p>On peut enfin écrire des formules mathématiques (en Latex): $\displaystyle\int_{-\infty}^{+\infty}e^{-x^2}=\sqrt{\pi}$</p>
 
 </div>
 </div>
@@ -13293,6 +13302,29 @@ height=197
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour accéder à l'application Jupyter on peut soit la lancer en local (à partir de notre ordinateur) soit se connecter à un serveur proposant cette application. Certains serveurs sont publics, parmi lesquels <a href="https://mybinder.org/">MyBinder</a> ou <a href="cocalc.com">Cocalc</a>. Il est également possible de monter soi-même un serveur à disposition d'autres utilisateurs en utilisant des outils comme <a href="https://jupyter.org/hub">JupyterHub</a> ou <a href="https://github.com/sagemathinc/cocalc-docker">Cocalc-Docker</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Int&#233;r&#234;t-P&#233;dagogique-de-Jupyter-et-de-ses-Notebooks">Int&#233;r&#234;t P&#233;dagogique de Jupyter et de ses Notebooks<a class="anchor-link" href="#Int&#233;r&#234;t-P&#233;dagogique-de-Jupyter-et-de-ses-Notebooks">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>J'y vois principalement les intérêts suivants:</p>
+<ul>
+<li>Proposer l'apprentissage de plusieurs langages de programmation dans un seul et même environnement, sans avoir à gérer plusieurs installations: on minimise le nombre d'installations nécessaires.</li>
+<li>En allant plus loin, si l'on met en place un serveur il n'y a même plus d'installation nécessaire.</li>
+<li>Toujours si l'on met en place un serveur, il est aisé de partager des documents avec les étudiants. Ils pourront également collaborer sur des espaces partagés. Certains outils de déploiement (comme CoCalc-Docker) permettent même de gérer l'édition simultanée.</li>
+<li>Les notebooks permettent d'intégrer l'énoncé de TP avec le compte-rendu de TP: les étudiants peuvent répondre directement sur l'énoncé de TP dans les cellules de code que l'on prévoit à cet effet. Ils executent leur code sur le compte-rendu de TP.</li>
+<li>Au niveau des mathématiques on peut mêler calcul numérique (avec par exemple SciPy ou Scilab) et calcul formel (avec SageMath ou SymPy).</li>
+</ul>
 
 </div>
 </div>
